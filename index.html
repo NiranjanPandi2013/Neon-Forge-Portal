@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeonForge Portal</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-loader" id="page-loader">
+    <div class="loader-ring"></div>
+    <p>Initializing NeonForge experience...</p>
+  </div>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow">NeonForge Portal</p>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-icon" aria-hidden="true"></span>
+          <h1>NeonForge Portal: essential software for a faster, safer, and more colorful computer</h1>
+        </div>
+        <p class="hero-copy">Download real apps, install Python/C/C++ toolchains, and create your own cross-language software with NeonForge's vibrant design and powerful libraries.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#software-list">Explore Software</a>
+          <a class="button button-secondary" href="#code-build">Code Your Own</a>
+          <a class="button button-primary" href="#ai-preview">NeonForge AI</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="mockup-card pulse">
+          <span class="mockup-badge">Featured</span>
+          <h2>System Cleaner</h2>
+          <p>Optimize performance, remove clutter, and keep your computer running smooth with a polished interface.</p>
+          <div class="stats">
+            <div><strong>98%</strong><span>Faster Boot</span></div>
+            <div><strong>24/7</strong><span>Protection</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="ai-preview" class="ai-preview-section">
+      <div class="section-intro">
+        <p class="eyebrow">NeonForge AI</p>
+        <h2>Use NeonForge AI directly inside the portal</h2>
+        <p>Chat with the real NeonForge assistant without leaving the homepage. Ask about code, debugging, architecture, or development strategy and get ChatGPT-style answers.</p>
+      </div>
+      <div class="ai-page">
+        <div class="ai-entry-card">
+          <div class="ai-entry-header">
+            <div>
+              <h3>NeonForge AI assistant</h3>
+              <p>Ask the AI about Python, C/C++, tooling, debugging, or architecture. It will respond clearly, explain concepts, and help you fix issues.</p>
+            </div>
+            <span class="ai-badge">AI Live</span>
+          </div>
+          <div class="ai-entry-chat" id="ai-chat">
+            <div class="ai-message system">Hello! I am NeonForge AI. Ask about code, bugs, or architecture and I’ll answer in a clear, helpful way.</div>
+          </div>
+          <div class="ai-input-row">
+            <textarea id="ai-prompt" rows="5" placeholder="Ask a question or paste code to review..."></textarea>
+            <button id="ai-send-button" class="button button-primary">Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="software-list" class="software-section">
+      <div class="section-intro">
+        <p class="eyebrow">Software essentials</p>
+        <h2>Must-have apps for every computer</h2>
+        <p>From security and productivity to multimedia and backup, these tools create a complete desktop experience.</p>
+      </div>
+
+      <div class="software-grid">
+        <article class="software-card glow-card">
+          <div class="card-icon">🛡️</div>
+          <h3>Antivirus Shield</h3>
+          <p>Protect your PC from viruses, malware, and risky downloads with real-time scans.</p>
+          <span class="tag">Security</span>
+          <a class="download-button" href="https://www.avast.com/en-us/free-antivirus-download" target="_blank" rel="noreferrer" data-software="Avast Antivirus">Download</a>
+        </article>
+
+        <article class="software-card glow-card">
+          <div class="card-icon">🧑‍💻</div>
+          <h3>Office Suite</h3>
+          <p>Create documents, spreadsheets, and presentations with a smooth and modern workspace.</p>
+          <span class="tag">Productivity</span>
+          <a class="download-button" href="https://www.libreoffice.org/download/download/" target="_blank" rel="noreferrer" data-software="LibreOffice">Download</a>
+        </article>
+
+        <article class="software-card glow-card">
+          <div class="card-icon">🌐</div>
+          <h3>Smart Browser</h3>
+          <p>Browse faster, block trackers, and keep tabs organized for better daily workflows.</p>
+          <span class="tag">Internet</span>
+          <a class="download-button" href="https://www.google.com/chrome/" target="_blank" rel="noreferrer" data-software="Google Chrome">Download</a>
+        </article>
+
+        <article class="software-card glow-card">
+          <div class="card-icon">🎵</div>
+          <h3>Media Player</h3>
+          <p>Play videos, music, and streams with stunning clarity and sleek playback controls.</p>
+          <span class="tag">Entertainment</span>
+          <a class="download-button" href="https://www.videolan.org/vlc/" target="_blank" rel="noreferrer" data-software="VLC Media Player">Download</a>
+        </article>
+
+        <article class="software-card glow-card">
+          <div class="card-icon">💾</div>
+          <h3>Backup Manager</h3>
+          <p>Save important files automatically so you always have a safe copy ready.</p>
+          <span class="tag">Storage</span>
+          <a class="download-button" href="https://www.easeus.com/backup-software/tb-free.html" target="_blank" rel="noreferrer" data-software="EaseUS Todo Backup">Download</a>
+        </article>
+
+        <article class="software-card glow-card">
+          <div class="card-icon">⚡</div>
+          <h3>Driver Booster</h3>
+          <p>Keep hardware drivers up to date for faster graphics, sound, and system stability.</p>
+          <span class="tag">Performance</span>
+          <a class="download-button" href="https://www.iobit.com/en/driver-booster.php" target="_blank" rel="noreferrer" data-software="Driver Booster">Download</a>
+        </article>
+
+        <article class="software-card glow-card">
+          <div class="card-icon">🧩</div>
+          <h3>Code Editor</h3>
+          <p>Write code faster in a modern editor with plugins, debugging, and Python support.</p>
+          <span class="tag">Developer</span>
+          <a class="download-button" href="https://code.visualstudio.com/" target="_blank" rel="noreferrer" data-software="Visual Studio Code">Download</a>
+        </article>
+
+        <article class="software-card glow-card highlighted-card">
+          <div class="card-icon">🐍</div>
+          <h3>Python Studio</h3>
+          <p>Install Python, run scripts, and design your own applications with libraries like PyQt, NumPy, and OpenCV.</p>
+          <span class="tag">Programming</span>
+          <a class="download-button" href="https://www.python.org/downloads/" target="_blank" rel="noreferrer" data-software="Python">Download</a>
+        </article>
+
+        <article class="software-card glow-card highlighted-card">
+          <div class="card-icon">💻</div>
+          <h3>C++ Compiler</h3>
+          <p>Compile fast native apps with GCC, Clang, or MSVC and connect them to Python for high performance.</p>
+          <span class="tag">Native</span>
+          <a class="download-button" href="https://visualstudio.microsoft.com/downloads/" target="_blank" rel="noreferrer" data-software="Visual Studio C++">Download</a>
+        </article>
+
+        <article class="software-card glow-card highlighted-card">
+          <div class="card-icon">🔧</div>
+          <h3>Cross-Language SDK</h3>
+          <p>Build desktop utilities and user interfaces by combining Python, C, and C++ with shared libraries.</p>
+          <span class="tag">Developer</span>
+          <a class="download-button" href="https://www.qt.io/download" target="_blank" rel="noreferrer" data-software="Qt SDK">Download</a>
+        </article>
+
+        <article class="software-card glow-card highlighted-card">
+          <div class="card-icon">🚀</div>
+          <h3>App Builder</h3>
+          <p>Create polished software using Python GUIs, native C++ modules, and modern design libraries.</p>
+          <span class="tag">Creation</span>
+          <a class="download-button" href="https://www.qt.io/download" target="_blank" rel="noreferrer" data-software="Qt App Builder">Download</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="feature-section">
+      <div class="feature-grid">
+        <div class="feature-block">
+          <h3>Fast setup</h3>
+          <p>Install and configure key apps quickly, so your computer is ready to use in minutes.</p>
+        </div>
+        <div class="feature-block">
+          <h3>Secure by design</h3>
+          <p>Use trusted tools that protect your system from threats while keeping data safe.</p>
+        </div>
+        <div class="feature-block">
+          <h3>Stylish interface</h3>
+          <p>Enjoy a polished look with bright colors, smooth transitions, and responsive design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="code-build" class="python-section">
+      <div class="section-intro">
+        <p class="eyebrow">Build your own</p>
+        <h2>Design great software with Python, C, and C++</h2>
+        <p>Mix high-level Python workflows with native C/C++ performance to create desktop apps, tools, and utilities that feel premium and look amazing.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-block highlight-block">
+          <h3>Python downloads</h3>
+          <p>Download Python and start building apps with PyQt, Tkinter, NumPy, OpenCV, Flask, and automation libraries.</p>
+          <a class="link-button" href="https://www.python.org/downloads/" target="_blank" rel="noreferrer">Download Python</a>
+        </div>
+        <div class="feature-block highlight-block">
+          <h3>C/C++ tools</h3>
+          <p>Install GCC, Clang, or MSVC to compile fast native apps, build game engines, and connect C++ code to Python modules.</p>
+          <a class="link-button" href="https://visualstudio.microsoft.com/vs/community/" target="_blank" rel="noreferrer">Get Visual Studio</a>
+        </div>
+        <div class="feature-block highlight-block">
+          <h3>Libraries & frameworks</h3>
+          <p>Use Qt, SDL, Boost, OpenCV, and Python packages together to build polished software, GUIs, and automation tools.</p>
+          <a class="link-button" href="https://pypi.org/" target="_blank" rel="noreferrer">Browse Packages</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="language-lab" class="code-section">
+      <div class="section-intro">
+        <p class="eyebrow">Code Lab</p>
+        <h2>Sample Python and C++ starters</h2>
+        <p>Use these snippets as the foundation for your own software, combining desktop UIs and native modules.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="code-card">
+          <h3>Python GUI starter</h3>
+          <pre class="code-block"><code>import tkinter as tk
+from tkinter import messagebox
+
+def on_download():
+    messagebox.showinfo("Download", "Downloading software package...")
+
+root = tk.Tk()
+root.title("NeonForge Portal")
+root.geometry("520x360")
+root.config(bg="#0f1024")
+
+button = tk.Button(root, text="Download Now", command=on_download, bg="#ff66b2", fg="#050817", font=("Segoe UI", 12, "bold"))
+button.pack(pady=40)
+
+root.mainloop()</code></pre>
+        </div>
+        <div class="code-card">
+          <h3>C++ native starter</h3>
+          <pre class="code-block"><code>#include <iostream>
+
+int main() {
+    std::cout << "Welcome to the NeonForge Portal!\n";
+    std::cout << "Compile this app with g++ or clang++." << std::endl;
+    return 0;
+}</code></pre>
+        </div>
+        <div class="code-card">
+          <h3>Python + C++ idea</h3>
+          <pre class="code-block"><code># Use Python for UI and C++ for fast cores
+# Build a C++ module and import it in Python
+
+# python_module.py
+import my_native_tool
+
+print(my_native_tool.hello())</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Designed to make NeonForge feel fresh, fast, and confident.</p>
+      <p class="muted">Open this page in any browser and explore the software collection with vibrant motion.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
